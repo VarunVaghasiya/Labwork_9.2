@@ -1,0 +1,37 @@
+// QUESTION=1
+#include <stdio.h>
+
+int main(){
+    char pass[n];
+    int i, x=0, p;
+    
+    printf("Enter a password : ");
+    scanf("%s",&pass);
+    
+if(strlen(pass)>=7)
+{
+    p=strlen(pass);
+    for(i=0;i<p;i++)
+    {
+        if((pass[i]>= 'a' && pass[i) <= 'z') || (pass[i]>='A' && pass[i]<='Z') || (pass[i]>='0' && pass[i]<='6'))
+         printf("sucess");
+         
+     int lower_case_count = 0;
+     int upper_case_count = 0;
+     int digit_count = 0;
+     p=strlen(pass);
+
+     for (i=0;i<p;i++){
+         if (pass[i]>='a' && pass[i]<='z') ++lower_case_count;
+         if (pass[i]>='A' && pass[i]<='Z') ++upper_case_count;
+         if (pass[i]>='0' && pass[i]<='6') ++digit_count;
+     }
+     if(lower_case_count>0 && upper_case_count>0 && digit_count>0){
+         printf("Your password is strong");
+     }
+    }
+    
+}
+
+    return 0;
+}
